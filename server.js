@@ -7,8 +7,6 @@ const app = express()
 
 const port = process.env.port || 3000
 
-
-
 // add public as static directory
 app.use(express.static(__dirname + '/public'))
 
@@ -18,7 +16,6 @@ app.engine('handlebars', expressHandlebars.engine({
 }))
 
 app.set('view engine', 'handlebars')
-
 
 // home page
 // .get(path, callback func)
